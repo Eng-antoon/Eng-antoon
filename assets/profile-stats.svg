@@ -104,7 +104,7 @@
     </g>
   <text x="24" y="451" class="heading">Most-used public repository languages</text>
   <clipPath id="language-clip"><rect x="24" y="466" width="852" height="12" rx="6" /></clipPath>
-  <g clip-path="url(#language-clip)"><rect x="24.0" y="466" width="704.3" height="12" fill="#3572A5" /><rect x="728.3" y="466" width="81.7" height="12" fill="#e34c26" /><rect x="809.9" y="466" width="37.6" height="12" fill="#f1e05a" /><rect x="847.5" y="466" width="15.3" height="12" fill="#f7523f" /><rect x="862.7" y="466" width="13.3" height="12" fill="#4F5D95" /></g>
+  <g clip-path="url(#language-clip)"><rect x="24.0" y="466" width="704.2" height="12" fill="#3572A5" /><rect x="728.2" y="466" width="81.7" height="12" fill="#e34c26" /><rect x="809.9" y="466" width="37.6" height="12" fill="#f1e05a" /><rect x="847.5" y="466" width="15.3" height="12" fill="#f7523f" /><rect x="862.7" y="466" width="13.3" height="12" fill="#4F5D95" /></g>
 
     <circle cx="29" cy="503" r="5" fill="#3572A5" />
     <text x="40" y="508" class="legend">Python 82.7%</text>
