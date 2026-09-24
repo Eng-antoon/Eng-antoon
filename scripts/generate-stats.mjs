@@ -41,6 +41,7 @@ for (let year = startYear; year <= currentYear; year += 1) {
   yearlyFields.push(`
     y${year}: contributionsCollection(from: "${from}", to: "${to}") {
       contributionCalendar { totalContributions }
+      restrictedContributionsCount
       totalCommitContributions
       totalIssueContributions
       totalPullRequestContributions
@@ -84,13 +85,16 @@ if (result.errors?.length) {
 const user = result.data.user;
 const years = [];
 let contributions = 0;
+let privateContributions = 0;
 let commits = 0;
 
 for (let year = startYear; year <= currentYear; year += 1) {
   const collection = user[`y${year}`];
   const total = collection.contributionCalendar.totalContributions;
-  years.push({ year, total });
+  const restricted = collection.restrictedContributionsCount;
+  years.push({ year, total, restricted });
   contributions += total;
+  privateContributions += restricted;
   commits += collection.totalCommitContributions;
 }
 
@@ -121,10 +125,10 @@ const esc = (value) => String(value)
 const number = new Intl.NumberFormat("en-US").format;
 
 const metricCards = [
-  [number(contributions), "contributions", "since account creation"],
-  [number(commits), "commits", "on default branches"],
+  [number(contributions), "total contributions", "public + anonymous private"],
+  [number(privateContributions), "private contributions", "details remain anonymous"],
+  [number(commits), "public commits", "on default branches"],
   [number(user.repositories.totalCount), "public repositories", "owned by this account"],
-  [number(years.filter(({ total }) => total > 0).length), "active years", `from ${startYear}–${currentYear}`],
 ];
 
 const cardWidth = 201;
@@ -146,14 +150,18 @@ const chartWidth = 832;
 const chartHeight = 116;
 const slot = chartWidth / years.length;
 const barWidth = Math.min(54, slot * 0.58);
-const bars = years.map(({ year, total }, index) => {
+const bars = years.map(({ year, total, restricted }, index) => {
   const height = Math.max(total > 0 ? 3 : 0, (total / maxYear) * chartHeight);
+  const privateHeight = total > 0 ? height * (restricted / total) : 0;
+  const publicHeight = Math.max(0, height - privateHeight);
   const x = chartX + index * slot + (slot - barWidth) / 2;
   const y = chartY + chartHeight - height;
+  const publicY = chartY + chartHeight - publicHeight;
   return `
     <g>
-      <title>${year}: ${number(total)} contributions</title>
-      <rect x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${barWidth.toFixed(1)}" height="${height.toFixed(1)}" rx="4" fill="#238636" />
+      <title>${year}: ${number(total)} total contributions (${number(restricted)} private)</title>
+      <rect x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${barWidth.toFixed(1)}" height="${privateHeight.toFixed(1)}" rx="4" fill="#8957e5" />
+      <rect x="${x.toFixed(1)}" y="${publicY.toFixed(1)}" width="${barWidth.toFixed(1)}" height="${publicHeight.toFixed(1)}" rx="4" fill="#238636" />
       <text x="${(x + barWidth / 2).toFixed(1)}" y="${(y - 8).toFixed(1)}" class="bar-value" text-anchor="middle">${number(total)}</text>
       <text x="${(x + barWidth / 2).toFixed(1)}" y="414" class="axis" text-anchor="middle">${year}</text>
     </g>`;
@@ -203,6 +211,10 @@ const svg = `<?xml version="1.0" encoding="UTF-8"?>
   <text x="24" y="62" class="subheading">A cross-repository view of tracked work and public code</text>
   ${cards}
   <text x="24" y="238" class="heading">Contributions by year</text>
+  <circle cx="672" cy="233" r="5" fill="#238636" />
+  <text x="684" y="238" class="legend">Public</text>
+  <circle cx="752" cy="233" r="5" fill="#8957e5" />
+  <text x="764" y="238" class="legend">Private / internal</text>
   <line x1="24" y1="392.5" x2="876" y2="392.5" stroke="#30363d" />
   ${bars}
   <text x="24" y="451" class="heading">Most-used public repository languages</text>

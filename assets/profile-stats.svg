@@ -17,92 +17,104 @@
 
     <g transform="translate(24 96)">
       <rect width="201" height="94" rx="10" fill="#161b22" stroke="#30363d" />
-      <text x="16" y="36" class="metric">513</text>
-      <text x="16" y="60" class="label">contributions</text>
-      <text x="16" y="79" class="hint">since account creation</text>
+      <text x="16" y="36" class="metric">4,012</text>
+      <text x="16" y="60" class="label">total contributions</text>
+      <text x="16" y="79" class="hint">public + anonymous private</text>
     </g>
     <g transform="translate(241 96)">
       <rect width="201" height="94" rx="10" fill="#161b22" stroke="#30363d" />
-      <text x="16" y="36" class="metric">470</text>
-      <text x="16" y="60" class="label">commits</text>
-      <text x="16" y="79" class="hint">on default branches</text>
+      <text x="16" y="36" class="metric">3,513</text>
+      <text x="16" y="60" class="label">private contributions</text>
+      <text x="16" y="79" class="hint">details remain anonymous</text>
     </g>
     <g transform="translate(458 96)">
       <rect width="201" height="94" rx="10" fill="#161b22" stroke="#30363d" />
-      <text x="16" y="36" class="metric">42</text>
-      <text x="16" y="60" class="label">public repositories</text>
-      <text x="16" y="79" class="hint">owned by this account</text>
+      <text x="16" y="36" class="metric">459</text>
+      <text x="16" y="60" class="label">public commits</text>
+      <text x="16" y="79" class="hint">on default branches</text>
     </g>
     <g transform="translate(675 96)">
       <rect width="201" height="94" rx="10" fill="#161b22" stroke="#30363d" />
-      <text x="16" y="36" class="metric">7</text>
-      <text x="16" y="60" class="label">active years</text>
-      <text x="16" y="79" class="hint">from 2019–2026</text>
+      <text x="16" y="36" class="metric">39</text>
+      <text x="16" y="60" class="label">public repositories</text>
+      <text x="16" y="79" class="hint">owned by this account</text>
     </g>
   <text x="24" y="238" class="heading">Contributions by year</text>
+  <circle cx="672" cy="233" r="5" fill="#238636" />
+  <text x="684" y="238" class="legend">Public</text>
+  <circle cx="752" cy="233" r="5" fill="#8957e5" />
+  <text x="764" y="238" class="legend">Private / internal</text>
   <line x1="24" y1="392.5" x2="876" y2="392.5" stroke="#30363d" />
 
     <g>
-      <title>2019: 174 contributions</title>
-      <rect x="59.0" y="276.0" width="54.0" height="116.0" rx="4" fill="#238636" />
-      <text x="86.0" y="268.0" class="bar-value" text-anchor="middle">174</text>
+      <title>2019: 175 total contributions (1 private)</title>
+      <rect x="59.0" y="385.0" width="54.0" height="0.0" rx="4" fill="#8957e5" />
+      <rect x="59.0" y="385.0" width="54.0" height="7.0" rx="4" fill="#238636" />
+      <text x="86.0" y="377.0" class="bar-value" text-anchor="middle">175</text>
       <text x="86.0" y="414" class="axis" text-anchor="middle">2019</text>
     </g>
     <g>
-      <title>2020: 0 contributions</title>
+      <title>2020: 0 total contributions (0 private)</title>
+      <rect x="163.0" y="392.0" width="54.0" height="0.0" rx="4" fill="#8957e5" />
       <rect x="163.0" y="392.0" width="54.0" height="0.0" rx="4" fill="#238636" />
       <text x="190.0" y="384.0" class="bar-value" text-anchor="middle">0</text>
       <text x="190.0" y="414" class="axis" text-anchor="middle">2020</text>
     </g>
     <g>
-      <title>2021: 54 contributions</title>
-      <rect x="267.0" y="356.0" width="54.0" height="36.0" rx="4" fill="#238636" />
-      <text x="294.0" y="348.0" class="bar-value" text-anchor="middle">54</text>
+      <title>2021: 56 total contributions (16 private)</title>
+      <rect x="267.0" y="389.0" width="54.0" height="0.9" rx="4" fill="#8957e5" />
+      <rect x="267.0" y="389.9" width="54.0" height="2.1" rx="4" fill="#238636" />
+      <text x="294.0" y="381.0" class="bar-value" text-anchor="middle">56</text>
       <text x="294.0" y="414" class="axis" text-anchor="middle">2021</text>
     </g>
     <g>
-      <title>2022: 3 contributions</title>
+      <title>2022: 3 total contributions (0 private)</title>
+      <rect x="371.0" y="389.0" width="54.0" height="0.0" rx="4" fill="#8957e5" />
       <rect x="371.0" y="389.0" width="54.0" height="3.0" rx="4" fill="#238636" />
       <text x="398.0" y="381.0" class="bar-value" text-anchor="middle">3</text>
       <text x="398.0" y="414" class="axis" text-anchor="middle">2022</text>
     </g>
     <g>
-      <title>2023: 18 contributions</title>
-      <rect x="475.0" y="380.0" width="54.0" height="12.0" rx="4" fill="#238636" />
-      <text x="502.0" y="372.0" class="bar-value" text-anchor="middle">18</text>
+      <title>2023: 18 total contributions (0 private)</title>
+      <rect x="475.0" y="389.0" width="54.0" height="0.0" rx="4" fill="#8957e5" />
+      <rect x="475.0" y="389.0" width="54.0" height="3.0" rx="4" fill="#238636" />
+      <text x="502.0" y="381.0" class="bar-value" text-anchor="middle">18</text>
       <text x="502.0" y="414" class="axis" text-anchor="middle">2023</text>
     </g>
     <g>
-      <title>2024: 173 contributions</title>
-      <rect x="579.0" y="276.7" width="54.0" height="115.3" rx="4" fill="#238636" />
-      <text x="606.0" y="268.7" class="bar-value" text-anchor="middle">173</text>
+      <title>2024: 177 total contributions (4 private)</title>
+      <rect x="579.0" y="384.9" width="54.0" height="0.2" rx="4" fill="#8957e5" />
+      <rect x="579.0" y="385.0" width="54.0" height="7.0" rx="4" fill="#238636" />
+      <text x="606.0" y="376.9" class="bar-value" text-anchor="middle">177</text>
       <text x="606.0" y="414" class="axis" text-anchor="middle">2024</text>
     </g>
     <g>
-      <title>2025: 87 contributions</title>
-      <rect x="683.0" y="334.0" width="54.0" height="58.0" rx="4" fill="#238636" />
-      <text x="710.0" y="326.0" class="bar-value" text-anchor="middle">87</text>
+      <title>2025: 701 total contributions (614 private)</title>
+      <rect x="683.0" y="363.8" width="54.0" height="24.7" rx="4" fill="#8957e5" />
+      <rect x="683.0" y="388.5" width="54.0" height="3.5" rx="4" fill="#238636" />
+      <text x="710.0" y="355.8" class="bar-value" text-anchor="middle">701</text>
       <text x="710.0" y="414" class="axis" text-anchor="middle">2025</text>
     </g>
     <g>
-      <title>2026: 4 contributions</title>
-      <rect x="787.0" y="389.0" width="54.0" height="3.0" rx="4" fill="#238636" />
-      <text x="814.0" y="381.0" class="bar-value" text-anchor="middle">4</text>
+      <title>2026: 2,882 total contributions (2,878 private)</title>
+      <rect x="787.0" y="276.0" width="54.0" height="115.8" rx="4" fill="#8957e5" />
+      <rect x="787.0" y="391.8" width="54.0" height="0.2" rx="4" fill="#238636" />
+      <text x="814.0" y="268.0" class="bar-value" text-anchor="middle">2,882</text>
       <text x="814.0" y="414" class="axis" text-anchor="middle">2026</text>
     </g>
   <text x="24" y="451" class="heading">Most-used public repository languages</text>
   <clipPath id="language-clip"><rect x="24" y="466" width="852" height="12" rx="6" /></clipPath>
-  <g clip-path="url(#language-clip)"><rect x="24.0" y="466" width="692.4" height="12" fill="#3572A5" /><rect x="716.4" y="466" width="93.8" height="12" fill="#e34c26" /><rect x="810.2" y="466" width="37.7" height="12" fill="#f1e05a" /><rect x="847.9" y="466" width="15.0" height="12" fill="#f7523f" /><rect x="863.0" y="466" width="13.0" height="12" fill="#4F5D95" /></g>
+  <g clip-path="url(#language-clip)"><rect x="24.0" y="466" width="704.3" height="12" fill="#3572A5" /><rect x="728.3" y="466" width="81.7" height="12" fill="#e34c26" /><rect x="809.9" y="466" width="37.6" height="12" fill="#f1e05a" /><rect x="847.5" y="466" width="15.3" height="12" fill="#f7523f" /><rect x="862.7" y="466" width="13.3" height="12" fill="#4F5D95" /></g>
 
     <circle cx="29" cy="503" r="5" fill="#3572A5" />
-    <text x="40" y="508" class="legend">Python 81.3%</text>
+    <text x="40" y="508" class="legend">Python 82.7%</text>
     <circle cx="199" cy="503" r="5" fill="#e34c26" />
-    <text x="210" y="508" class="legend">HTML 11.0%</text>
+    <text x="210" y="508" class="legend">HTML 9.6%</text>
     <circle cx="369" cy="503" r="5" fill="#f1e05a" />
     <text x="380" y="508" class="legend">JavaScript 4.4%</text>
     <circle cx="539" cy="503" r="5" fill="#f7523f" />
     <text x="550" y="508" class="legend">Blade 1.8%</text>
     <circle cx="709" cy="503" r="5" fill="#4F5D95" />
-    <text x="720" y="508" class="legend">PHP 1.5%</text>
+    <text x="720" y="508" class="legend">PHP 1.6%</text>
   <text x="876" y="540" class="hint" text-anchor="end">Updated Sep 24, 2026 · Source: GitHub API</text>
 </svg>

@@ -21,7 +21,7 @@ I enjoy taking an idea from an operational need to a working product—shaping t
   <img src="./assets/profile-stats.svg" width="100%" alt="Antoon's GitHub activity and language statistics" />
 </a>
 
-<sub>This snapshot is generated from GitHub's API and refreshes automatically every week. GitHub counts commits on a repository's default or `gh-pages` branch; private work is included only when GitHub's private-contribution visibility setting allows it.</sub>
+<sub>This snapshot is generated from GitHub's profile-level API and refreshes automatically every week. Total contributions now include the anonymous private/internal counts GitHub exposes after private-contribution visibility is enabled. Private repository names, code, and commit details are never read or published. The public-commit figure remains separate because GitHub deliberately hides the type and details of private contributions.</sub>
 
 ## Selected work
 
