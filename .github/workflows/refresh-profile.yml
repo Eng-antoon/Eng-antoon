@@ -1,0 +1,43 @@
+name: Refresh profile metrics
+
+on:
+  schedule:
+    - cron: "17 4 * * 1"
+  workflow_dispatch:
+  push:
+    branches: [master, main]
+    paths:
+      - "scripts/generate-stats.mjs"
+      - ".github/workflows/refresh-profile.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-metrics
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@v4
+
+      - name: Generate cross-repository metrics
+        run: node scripts/generate-stats.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROFILE_LOGIN: Eng-antoon
+
+      - name: Commit refreshed metrics
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/profile-stats.svg
+          if git diff --cached --quiet; then
+            echo "Profile metrics are already current."
+            exit 0
+          fi
+          git commit -m "chore: refresh profile metrics"
+          git push
