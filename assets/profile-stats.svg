@@ -17,13 +17,13 @@
 
     <g transform="translate(24 96)">
       <rect width="201" height="94" rx="10" fill="#161b22" stroke="#30363d" />
-      <text x="16" y="36" class="metric">4,019</text>
+      <text x="16" y="36" class="metric">4,071</text>
       <text x="16" y="60" class="label">total contributions</text>
       <text x="16" y="79" class="hint">public + anonymous private</text>
     </g>
     <g transform="translate(241 96)">
       <rect width="201" height="94" rx="10" fill="#161b22" stroke="#30363d" />
-      <text x="16" y="36" class="metric">3,889</text>
+      <text x="16" y="36" class="metric">3,941</text>
       <text x="16" y="60" class="label">private contributions</text>
       <text x="16" y="79" class="hint">details remain anonymous</text>
     </g>
@@ -48,9 +48,9 @@
 
     <g>
       <title>2019: 175 total contributions (174 private)</title>
-      <rect x="59.0" y="385.0" width="54.0" height="7.0" rx="4" fill="#8957e5" />
+      <rect x="59.0" y="385.1" width="54.0" height="6.9" rx="4" fill="#8957e5" />
       <rect x="59.0" y="392.0" width="54.0" height="0.0" rx="4" fill="#238636" />
-      <text x="86.0" y="377.0" class="bar-value" text-anchor="middle">175</text>
+      <text x="86.0" y="377.1" class="bar-value" text-anchor="middle">175</text>
       <text x="86.0" y="414" class="axis" text-anchor="middle">2019</text>
     </g>
     <g>
@@ -83,23 +83,23 @@
     </g>
     <g>
       <title>2024: 177 total contributions (177 private)</title>
-      <rect x="579.0" y="384.9" width="54.0" height="7.1" rx="4" fill="#8957e5" />
+      <rect x="579.0" y="385.0" width="54.0" height="7.0" rx="4" fill="#8957e5" />
       <rect x="579.0" y="392.0" width="54.0" height="0.0" rx="4" fill="#238636" />
-      <text x="606.0" y="376.9" class="bar-value" text-anchor="middle">177</text>
+      <text x="606.0" y="377.0" class="bar-value" text-anchor="middle">177</text>
       <text x="606.0" y="414" class="axis" text-anchor="middle">2024</text>
     </g>
     <g>
       <title>2025: 701 total contributions (674 private)</title>
-      <rect x="683.0" y="363.9" width="54.0" height="27.1" rx="4" fill="#8957e5" />
+      <rect x="683.0" y="364.4" width="54.0" height="26.6" rx="4" fill="#8957e5" />
       <rect x="683.0" y="390.9" width="54.0" height="1.1" rx="4" fill="#238636" />
-      <text x="710.0" y="355.9" class="bar-value" text-anchor="middle">701</text>
+      <text x="710.0" y="356.4" class="bar-value" text-anchor="middle">701</text>
       <text x="710.0" y="414" class="axis" text-anchor="middle">2025</text>
     </g>
     <g>
-      <title>2026: 2,889 total contributions (2,787 private)</title>
-      <rect x="787.0" y="276.0" width="54.0" height="111.9" rx="4" fill="#8957e5" />
-      <rect x="787.0" y="387.9" width="54.0" height="4.1" rx="4" fill="#238636" />
-      <text x="814.0" y="268.0" class="bar-value" text-anchor="middle">2,889</text>
+      <title>2026: 2,941 total contributions (2,839 private)</title>
+      <rect x="787.0" y="276.0" width="54.0" height="112.0" rx="4" fill="#8957e5" />
+      <rect x="787.0" y="388.0" width="54.0" height="4.0" rx="4" fill="#238636" />
+      <text x="814.0" y="268.0" class="bar-value" text-anchor="middle">2,941</text>
       <text x="814.0" y="414" class="axis" text-anchor="middle">2026</text>
     </g>
   <text x="24" y="451" class="heading">Most-used public repository languages</text>
@@ -116,5 +116,5 @@
     <text x="550" y="508" class="legend">Python 10.4%</text>
     <circle cx="709" cy="503" r="5" fill="#e34c26" />
     <text x="720" y="508" class="legend">HTML 9.2%</text>
-  <text x="876" y="540" class="hint" text-anchor="end">Updated Sep 28, 2026 · Source: GitHub API</text>
+  <text x="876" y="540" class="hint" text-anchor="end">Updated Oct 05, 2026 · Source: GitHub API</text>
 </svg>
