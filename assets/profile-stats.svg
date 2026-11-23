@@ -116,5 +116,5 @@
     <text x="550" y="508" class="legend">Python 10.4%</text>
     <circle cx="709" cy="503" r="5" fill="#e34c26" />
     <text x="720" y="508" class="legend">HTML 9.2%</text>
-  <text x="876" y="540" class="hint" text-anchor="end">Updated Nov 16, 2026 · Source: GitHub API</text>
+  <text x="876" y="540" class="hint" text-anchor="end">Updated Nov 23, 2026 · Source: GitHub API</text>
 </svg>
